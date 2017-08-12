@@ -1,0 +1,138 @@
+﻿<Page
+    x:Class="BgTimers.Timers6"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BgTimers"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid x:Name="grid1" 
+              PointerPressed="Grid_PointerPressed">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="txtCur1" 
+                       Text="00:00" 
+                       FontSize="22"
+                       VerticalAlignment="Bottom" 
+                       HorizontalAlignment="Center"></TextBlock>
+            <TextBlock x:Name="txtTot1"
+                       Grid.Row="1" 
+                       Text="00:00"
+                       FontSize="42"
+                       VerticalAlignment="Center" 
+                       HorizontalAlignment="Center"></TextBlock>
+        </Grid>
+
+        <Grid x:Name="grid2" Grid.Column="1"
+              PointerPressed="Grid_PointerPressed">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="txtCur2" 
+                       Text="00:00" 
+                       FontSize="22"
+                       VerticalAlignment="Bottom" 
+                       HorizontalAlignment="Center"></TextBlock>
+            <TextBlock x:Name="txtTot2"
+                       Grid.Row="1" 
+                       Text="00:00"
+                       FontSize="42"
+                       VerticalAlignment="Center" 
+                       HorizontalAlignment="Center"></TextBlock>
+        </Grid>
+
+        <Grid x:Name="grid3" Grid.Row="1"
+              PointerPressed="Grid_PointerPressed">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="txtCur3" 
+                       Text="00:00" 
+                       FontSize="22"
+                       VerticalAlignment="Bottom" 
+                       HorizontalAlignment="Center"></TextBlock>
+            <TextBlock x:Name="txtTot3"
+                       Grid.Row="1" 
+                       Text="00:00"
+                       FontSize="42"
+                       VerticalAlignment="Center" 
+                       HorizontalAlignment="Center"></TextBlock>
+        </Grid>
+
+        <Grid x:Name="grid4" Grid.Column="1" Grid.Row="1" 
+              PointerPressed="Grid_PointerPressed">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="txtCur4" 
+                       Text="00:00" 
+                       FontSize="22"
+                       VerticalAlignment="Bottom" 
+                       HorizontalAlignment="Center"></TextBlock>
+            <TextBlock x:Name="txtTot4"
+                       Grid.Row="1" 
+                       Text="00:00"
+                       FontSize="42"
+                       VerticalAlignment="Center" 
+                       HorizontalAlignment="Center"></TextBlock>
+        </Grid>
+
+        <Grid x:Name="grid5" Grid.Row="2" 
+              PointerPressed="Grid_PointerPressed">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="txtCur5" 
+                       Text="00:00" 
+                       FontSize="22"
+                       VerticalAlignment="Bottom" 
+                       HorizontalAlignment="Center"></TextBlock>
+            <TextBlock x:Name="txtTot5"
+                       Grid.Row="1" 
+                       Text="00:00"
+                       FontSize="42"
+                       VerticalAlignment="Center" 
+                       HorizontalAlignment="Center"></TextBlock>
+        </Grid>
+
+        <Grid x:Name="grid6" Grid.Column="1" Grid.Row="2" 
+              PointerPressed="Grid_PointerPressed">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="txtCur6" 
+                       Text="00:00" 
+                       FontSize="22"
+                       VerticalAlignment="Bottom" 
+                       HorizontalAlignment="Center"></TextBlock>
+            <TextBlock x:Name="txtTot6"
+                       Grid.Row="1" 
+                       Text="00:00"
+                       FontSize="42"
+                       VerticalAlignment="Center" 
+                       HorizontalAlignment="Center"></TextBlock>
+        </Grid>
+
+
+    </Grid>
+</Page>
